@@ -1,0 +1,1253 @@
+/* ==========================================================
+   DASHBOARD LAYOUT
+========================================================== */
+
+.dashboard {
+
+    min-height: 100vh;
+
+    transition: .35s ease;
+
+}
+
+.dashboard-container {
+
+    width: 95%;
+
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding: 20px;
+
+}
+
+
+
+/* ==========================================================
+   LIGHT THEME
+========================================================== */
+
+.light-theme {
+
+    background: #f5f7fb;
+
+    color: #222;
+
+}
+
+
+
+/* ==========================================================
+   DARK THEME
+========================================================== */
+
+.dark-theme {
+
+    background: #101010;
+
+    color: white;
+
+}
+
+
+
+/* ==========================================================
+   TOP NAVBAR
+========================================================== */
+
+.topbar {
+
+    width: 100%;
+
+    height: 82px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 999;
+
+    transition: .35s;
+
+}
+
+
+
+/* ==========================================================
+   LIGHT NAVBAR
+========================================================== */
+
+.light-theme .topbar {
+
+    background: white;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+
+}
+
+
+
+/* ==========================================================
+   DARK NAVBAR
+========================================================== */
+
+.dark-theme .topbar {
+
+    background: #181818;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .45);
+
+}
+
+
+
+/* ==========================================================
+   COMPANY SECTION
+========================================================== */
+
+.company-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.logo {
+
+    width: 100px;
+
+    height: 70px;
+
+    object-fit: contain;
+
+}
+
+.company-left h2 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 2px;
+
+}
+
+.company-left span {
+
+    font-size: 13px;
+
+    color: #888;
+
+}
+
+.dark-theme .company-left span {
+
+    color: #b8b8b8;
+
+}
+
+
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.topbar nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.topbar nav button {
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    padding: 11px 18px;
+
+    border-radius: 12px;
+
+    transition: .30s;
+
+}
+
+
+
+/* ==========================================================
+   LIGHT NAV BUTTON
+========================================================== */
+
+.light-theme .topbar nav button {
+
+    color: #333;
+
+}
+
+.light-theme .topbar nav button:hover {
+
+    background: #ffe5d0;
+
+    color: #b34700;
+
+}
+
+
+
+/* ==========================================================
+   DARK NAV BUTTON
+========================================================== */
+
+.dark-theme .topbar nav button {
+
+    color: white;
+
+}
+
+.dark-theme .topbar nav button:hover {
+
+    background: #303030;
+
+}
+
+
+
+/* ==========================================================
+   ADMIN BUTTON
+========================================================== */
+
+.topbar nav button:last-child {
+
+    background: #b91d1d;
+
+    color: white;
+
+    font-weight: 700;
+
+    padding: 12px 24px;
+
+}
+
+.topbar nav button:last-child:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* ==========================================================
+   SLIDER SECTION
+========================================================== */
+
+.slider-section {
+
+    margin-top: 30px;
+
+}
+
+.slider-card {
+
+    height: 250px;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    transition: .35s;
+
+}
+
+.light-theme .slider-card {
+
+    background: white;
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .08);
+
+}
+
+.dark-theme .slider-card {
+
+    background: #1b1b1b;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
+
+}
+
+
+/* ==========================================================
+   LIGHT COMPANY BUTTON
+========================================================== */
+
+.light-theme .company-switch button {
+
+    background: white;
+
+    color: #333;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .08);
+
+}
+
+
+
+/* ==========================================================
+   DARK COMPANY BUTTON
+========================================================== */
+
+.dark-theme .company-switch button {
+
+    background: #222;
+
+    color: white;
+
+}
+
+
+
+/* ==========================================================
+   ACTIVE COMPANY
+========================================================== */
+
+.active-company {
+
+    background: #141414 !important;
+
+    color: white !important;
+
+}
+
+
+
+/* ==========================================================
+   STATS ROW
+========================================================== */
+
+.stats-row {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-top: 28px;
+
+}
+
+
+
+/* ==========================================================
+   STAT BOX
+========================================================== */
+
+.stat-box {
+
+    border-radius: 18px;
+
+    padding: 22px;
+
+    transition: .35s;
+
+}
+
+.light-theme .stat-box {
+
+    background: white;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+}
+
+.dark-theme .stat-box {
+
+    background: #1c1c1c;
+
+}
+
+.stat-box h2 {
+
+    margin-top: 12px;
+
+    font-size: 36px;
+
+    color: #c12525;
+
+}
+
+.view-all-btn{
+    background:#c62828;
+    color:#fff;
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.view-all-btn:hover{
+    background:#a71d1d;
+}
+.recent-table-wrapper{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.dark-theme .recent-table-wrapper{
+    background:#1c1c1c;
+}
+.recent-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.recent-table th{
+    background:#f5f5f5;
+    padding:16px;
+    text-align:left;
+    font-size:14px;
+    font-weight:700;
+}
+
+.dark-theme .recent-table th{
+    background:#262626;
+}
+
+.recent-table td{
+    padding:16px;
+    border-top:1px solid #ececec;
+}
+
+.dark-theme .recent-table td{
+    border-color:#333;
+}
+
+.recent-table tbody tr:hover{
+    background:#fafafa;
+}
+
+.dark-theme .recent-table tbody tr:hover{
+    background:#252525;
+}
+
+.empty-recent{
+
+    padding:50px;
+
+    text-align:center;
+
+    border:2px dashed #ddd;
+
+    border-radius:18px;
+
+    color:#888;
+
+}
+
+.dark-theme .empty-recent{
+
+    border-color:#444;
+
+    color:#aaa;
+
+}
+@media(max-width:768px){
+
+.recent-header{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+
+}
+
+.recent-table-wrapper{
+
+    overflow-x:auto;
+
+}
+
+.recent-table{
+
+    min-width:700px;
+
+}
+
+}
+/* ==========================================
+RECENT HEADER
+========================================== */
+
+.recent-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+/* ==========================================================
+   WELCOME CARD
+========================================================== */
+
+.welcome-card {
+
+    margin-top: 25px;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    transition: .35s;
+
+}
+
+.light-theme .welcome-card {
+
+    background: white;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+}
+
+.dark-theme .welcome-card {
+
+    background: #1b1b1b;
+
+}
+
+.welcome-card h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+.welcome-card p {
+
+    color: #888;
+
+}
+
+.dark-theme .welcome-card p {
+
+    color: #bdbdbd;
+
+}
+
+/* ==========================================================
+   CATEGORY SECTION
+========================================================== */
+
+.category-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+}
+
+
+/* ==========================================================
+   CATEGORY CARD
+========================================================== */
+
+.category-card {
+
+    position: relative;
+
+    height: 250px;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    padding: 25px;
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+}
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.category-card img {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+
+/* ==========================================================
+   BLACK SHADOW
+========================================================== */
+
+.category-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(to top,
+
+            rgba(0, 0, 0, .78),
+
+            rgba(0, 0, 0, .18));
+
+    z-index: 1;
+
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.category-card h2 {
+
+    position: relative;
+
+    z-index: 5;
+
+    font-size: 28px;
+
+    line-height: 36px;
+
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.category-card p {
+
+    position: relative;
+
+    z-index: 5;
+
+    margin-top: 8px;
+
+    font-size: 15px;
+
+    color: #ececec;
+
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.category-content {
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+/* ==========================================================
+   ARROW BUTTON
+========================================================== */
+
+.category-arrow {
+
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: white;
+
+    color: #111;
+
+    z-index: 6;
+
+    font-size: 22px;
+
+    transition: .30s;
+
+}
+
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.category-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .18);
+
+}
+
+
+.category-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+.category-card:hover .category-arrow {
+
+    transform: rotate(-45deg);
+
+}
+
+
+/* ==========================================================
+   LIGHT THEME
+========================================================== */
+
+.light-theme .category-card {
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .10);
+
+}
+
+
+/* ==========================================================
+   DARK THEME
+========================================================== */
+
+.dark-theme .category-card {
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .45);
+
+}
+
+
+/* ==========================================================
+   RECENT LEADS
+========================================================== */
+
+.recent-section {
+
+    margin-top: 40px;
+
+}
+
+
+.recent-section h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* ==========================================================
+   RECENT CARD
+========================================================== */
+
+.recent-card {
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+}
+
+
+.light-theme .recent-card {
+
+    background: white;
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .08);
+
+}
+
+
+.dark-theme .recent-card {
+
+    background: #1c1c1c;
+
+}
+
+
+/* ==========================================================
+   RECENT TABLE
+========================================================== */
+
+.recent-card table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+.recent-card th {
+
+    padding: 18px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+
+}
+
+
+.recent-card td {
+
+    padding: 18px;
+
+    border-top: 1px solid rgba(0, 0, 0, .08);
+
+}
+
+
+.dark-theme .recent-card td {
+
+    border-top: 1px solid rgba(255, 255, 255, .08);
+
+}
+
+
+.recent-card tr {
+
+    transition: .25s;
+
+}
+
+
+.light-theme .recent-card tr:hover {
+
+    background: #fafafa;
+
+}
+
+
+.dark-theme .recent-card tr:hover {
+
+    background: #2b2b2b;
+
+}
+
+
+/* ==========================================================
+   STATUS BADGE
+========================================================== */
+
+.status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 6px 16px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+.status.hot {
+
+    background: #ffdddd;
+
+    color: #d40000;
+
+}
+
+
+.status.warm {
+
+    background: #fff4d6;
+
+    color: #b16a00;
+
+}
+
+
+.status.cold {
+
+    background: #dff3ff;
+
+    color: #0069c9;
+
+}
+
+/* ==========================================================
+   IMAGE SLIDER
+========================================================== */
+
+.slider-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    height:280px;
+
+}
+
+.slider-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+}
+
+
+/* LEFT BUTTON */
+
+.slider-left{
+
+    position:absolute;
+
+    left:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:24px;
+
+}
+
+
+/* RIGHT BUTTON */
+
+.slider-right{
+
+    position:absolute;
+
+    right:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:24px;
+
+}
+
+
+/* DOTS */
+
+.slider-dots{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.slider-dots span{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:white;
+
+    cursor:pointer;
+
+    opacity:.5;
+
+}
+
+.active-dot{
+
+    width:32px !important;
+
+    border-radius:30px !important;
+
+    opacity:1 !important;
+
+}
+
+/* ==========================================================
+   COMPANY SWITCH
+========================================================== */
+
+.company-switch-form{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin:25px 0 35px;
+
+}
+
+/* ==========================================================
+   COMPANY BUTTON
+========================================================== */
+
+.company-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    padding:18px 22px;
+
+    border:none;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    transition:.30s;
+
+}
+
+/* ==========================================================
+   COMPANY LOGO
+========================================================== */
+
+.company-btn-logo{
+
+    width:70px;
+
+    height:46px;
+
+    object-fit:contain;
+
+    flex:none;
+
+}
+
+/* ==========================================================
+   COMPANY TEXT
+========================================================== */
+
+.company-btn span{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    line-height:1.3;
+
+}
+
+/* ==========================================================
+   LIGHT THEME
+========================================================== */
+
+.light-theme .company-btn{
+
+    background:#ffffff;
+
+    color:#222;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
+
+    border:2px solid transparent;
+
+}
+
+/* ==========================================================
+   DARK THEME
+========================================================== */
+
+.dark-theme .company-btn{
+
+    background:#202020;
+
+    color:#ffffff;
+
+    border:2px solid #2f2f2f;
+
+}
+
+/* ==========================================================
+   ACTIVE BUTTON
+========================================================== */
+
+.company-btn.active-company{
+
+    background:#c62828;
+
+    color:#ffffff;
+
+    border:2px solid #ffffff;
+
+}
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.company-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+.company-switch-form{
+
+    grid-template-columns:1fr;
+
+}
+
+.company-btn{
+
+    justify-content:flex-start;
+
+}
+
+.company-btn-logo{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+.company-btn span{
+
+    font-size:15px;
+
+}
+
+}

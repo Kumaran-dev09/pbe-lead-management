@@ -1,0 +1,205 @@
+.lead-success-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#f3f5fb;
+
+    padding:30px;
+
+}
+
+.lead-success-card{
+
+    width:100%;
+
+    max-width:650px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.success-icon{
+
+    width:110px;
+
+    height:110px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#e8fff0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+    animation:pop .4s ease;
+
+}
+
+@keyframes pop{
+
+    from{
+
+        transform:scale(.6);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.lead-success-card h1{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+    color:#222;
+
+}
+
+.success-subtitle{
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    font-size:16px;
+
+}
+
+.lead-info{
+
+    background:#fafafa;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    margin-bottom:35px;
+
+}
+
+.info-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #ececec;
+
+    font-size:16px;
+
+}
+
+.info-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.info-row span{
+
+    color:#777;
+
+}
+
+.info-row strong{
+
+    color:#111;
+
+}
+
+.success-buttons{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+.next-btn{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#c62828;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.dashboard-btn{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#212121;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.next-btn:hover,
+
+.dashboard-btn:hover{
+
+    transform:translateY(-3px);
+
+}

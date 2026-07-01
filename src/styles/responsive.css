@@ -1,0 +1,234 @@
+/* =====================================================
+   LARGE DESKTOP
+   1400px+
+===================================================== */
+
+@media (min-width:1400px){
+
+    .container{
+
+        max-width:1320px;
+        margin:auto;
+
+    }
+
+}
+
+
+/* =====================================================
+   LAPTOP
+   1200px
+===================================================== */
+
+@media (max-width:1200px){
+
+    .container{
+
+        width:95%;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL LAPTOP
+===================================================== */
+
+@media (max-width:1024px){
+
+    .glass-login-card{
+
+        width:430px;
+
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:992px){
+
+    .glass-login-card{
+
+        width:420px;
+
+        padding:35px;
+
+    }
+
+}
+
+
+/* =====================================================
+   TABLET PORTRAIT
+===================================================== */
+
+@media (max-width:768px){
+
+    .glass-login-card{
+
+        width:100%;
+
+        max-width:420px;
+
+        padding:30px;
+
+    }
+
+    .login-heading h1{
+
+        font-size:28px;
+
+    }
+
+    .login-bottom-buttons{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:576px){
+
+    .login-page{
+
+        padding:18px;
+
+    }
+
+    .glass-login-card{
+
+        padding:25px;
+
+        border-radius:20px;
+
+    }
+
+    .login-heading h1{
+
+        font-size:25px;
+
+    }
+
+    .portal-title{
+
+        font-size:12px;
+
+    }
+
+    .login-btn{
+
+        padding:15px;
+
+    }
+
+    .social-btn{
+
+        padding:15px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width:420px){
+
+    .glass-login-card{
+
+        padding:20px;
+
+    }
+
+    .login-heading h1{
+
+        font-size:22px;
+
+    }
+
+    .logo-icon{
+
+        width:62px;
+        height:62px;
+
+        font-size:28px;
+
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL DEVICES
+===================================================== */
+
+@media (max-width:340px){
+
+    .glass-login-card{
+
+        padding:18px;
+
+    }
+
+    .login-heading h1{
+
+        font-size:20px;
+
+    }
+
+}
+
+
+/* =====================================================
+   LANDSCAPE MOBILE
+===================================================== */
+
+@media (max-height:650px){
+
+    .login-page{
+
+        padding:25px 15px;
+
+    }
+
+}
+
+/* ==========================================================
+FORM COMPANY SWITCH
+========================================================== */
+
+@media(max-width:768px){
+
+    .company-switch-form{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* ==========================================================
+   FORM GRID
+========================================================== */
+
+@media(max-width:768px){
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

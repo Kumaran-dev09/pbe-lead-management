@@ -1,0 +1,233 @@
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:260px;
+    height:100vh;
+
+    background:#111111;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    color:#fff;
+
+    padding:20px;
+
+    overflow-y:auto;
+
+    z-index:999;
+
+    box-shadow:3px 0 15px rgba(0,0,0,.25);
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.sidebar-top{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.sidebar-logo{
+
+    width:600px;
+    height:100px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 12px;
+
+}
+
+.sidebar-top h2{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.sidebar nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    flex:1;
+
+}
+
+.sidebar-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:15px 18px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+
+.sidebar-link:hover{
+
+    background:#6d0b13;
+
+}
+
+.sidebar-link.active{
+
+    background:#c40018;
+
+}
+
+.sidebar-icon{
+
+    font-size:20px;
+
+    width:24px;
+
+    text-align:center;
+
+}
+
+/* ===========================
+   LOGOUT
+=========================== */
+
+.logout-button{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    background:#c40018;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    margin-top:25px;
+
+}
+
+.logout-button:hover{
+
+    background:#a90014;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+.sidebar::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:#444;
+
+    border-radius:10px;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:991px){
+
+.sidebar{
+
+    width:220px;
+
+}
+
+.sidebar-top h2{
+
+    font-size:28px;
+
+}
+
+.sidebar-logo{
+
+    width:70px;
+
+    height:70px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.sidebar{
+
+    width:200px;
+
+}
+
+.sidebar-link{
+
+    font-size:15px;
+
+    padding:13px;
+
+}
+
+.logout-button{
+
+    padding:13px;
+
+}
+
+}

@@ -1,0 +1,551 @@
+
+
+/* ==========================================================
+   FULL SETUP
+========================================================== */
+
+.full-setup-box{
+    margin:24px 0;
+    padding:18px 22px;
+    border-radius:16px;
+    background:#fff7ef;
+    border:1px solid #ffd6b3;
+}
+
+.dark-theme .full-setup-box{
+    background:#252525;
+    border-color:#3b3b3b;
+}
+
+.full-setup-label{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:700;
+}
+
+.full-setup-label input{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+
+/* ==========================================================
+   MACHINE LIST
+========================================================== */
+
+.machine-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+
+/* ==========================================================
+   MACHINE CARD
+========================================================== */
+
+.machine-card{
+    background:#ffffff;
+    border:1px solid #ececec;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.30s;
+    box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+.machine-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 32px rgba(0,0,0,.10);
+}
+
+.dark-theme .machine-card{
+    background:#1d1d1d;
+    border:1px solid #333;
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.machine-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    width:100%;
+
+    gap:20px;
+
+}
+
+.machine-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex:1;
+
+}
+/* ==========================================================
+   CHECKBOX
+========================================================== */
+
+.machine-check{
+
+    width:24px !important;
+
+    height:24px !important;
+
+    margin:0;
+
+    cursor:pointer;
+
+    flex-shrink:0;
+
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.machine-title{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.machine-title h3{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+.machine-title small{
+
+    margin-top:5px;
+
+    color:#16a34a;
+
+    font-size:13px;
+
+}
+
+.dark-theme .machine-title small{
+    color:#4ade80;
+}
+
+/* ==========================================================
+   EXPAND BUTTON
+========================================================== */
+
+.expand-btn{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#f3f4f6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    flex-shrink:0;
+
+    transition:.25s;
+
+}
+
+.expand-btn:hover{
+
+    background:#ececec;
+
+}
+.dark-theme .expand-btn{
+    background:#303030;
+    color:white;
+}
+
+.dark-theme .expand-btn:hover{
+    background:#3d3d3d;
+}
+
+/* ==========================================================
+   VARIANT SECTION
+========================================================== */
+
+.variant-section{
+    padding:0 22px 22px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:14px;
+}
+
+/* ==========================================================
+   VARIANT ITEM
+========================================================== */
+
+.variant-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    border:1px solid #e8e8e8;
+    border-radius:14px;
+    padding:14px;
+    cursor:pointer;
+    transition:.25s;
+    background:white;
+}
+
+.variant-item:hover{
+    border-color:#ff9b45;
+    background:#fff8f2;
+}
+
+.dark-theme .variant-item{
+    background:#2a2a2a;
+    border-color:#3d3d3d;
+}
+
+.dark-theme .variant-item:hover{
+    background:#353535;
+}
+
+.variant-item input{
+    width:18px;
+    height:18px;
+    margin:0;
+    cursor:pointer;
+}
+
+.variant-item span{
+    font-size:15px;
+    font-weight:500;
+}
+
+/* ==========================================================
+   ACTIVE VARIANT
+========================================================== */
+
+.active-variant{
+    border:2px solid #d97706 !important;
+    background:#fff8ec;
+}
+
+.dark-theme .active-variant{
+    background:#3a2b17;
+    border-color:#ff9b45 !important;
+}
+
+/* ==========================================
+   MACHINE LIST
+========================================== */
+
+.machine-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+/* ==========================================
+   MACHINE CARD
+========================================== */
+
+.machine-card{
+
+    background:#fff;
+
+    border:1px solid #e9e9e9;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+    overflow:hidden;
+
+    transition:.25s;
+
+}
+
+.machine-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.10);
+
+}
+
+.dark-theme .machine-card{
+
+    background:#1d1d1d;
+
+    border-color:#333;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.machine-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:22px 28px;
+
+}
+
+/* ==========================================
+   LEFT SIDE
+========================================== */
+
+.machine-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex:1;
+
+}
+
+/* ==========================================
+   CHECKBOX
+========================================== */
+
+.machine-check{
+
+    width:22px;
+
+    height:22px;
+
+    margin:0;
+
+    cursor:pointer;
+
+    flex-shrink:0;
+
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.machine-title{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.machine-title h3{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+.machine-title small{
+
+    margin-top:5px;
+
+    color:#16a34a;
+
+    font-size:13px;
+
+}
+
+.dark-theme .machine-title h3{
+
+    color:#fff;
+
+}
+
+.dark-theme .machine-title small{
+
+    color:#4ade80;
+
+}
+
+/* ==========================================
+   ARROW BUTTON
+========================================== */
+
+.expand-btn{
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#f3f4f6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    flex-shrink:0;
+
+    transition:.25s;
+
+}
+
+.expand-btn:hover{
+
+    background:#e8e8e8;
+
+}
+
+.dark-theme .expand-btn{
+
+    background:#303030;
+
+    color:#fff;
+
+}
+
+/* ==========================================
+   VARIANTS
+========================================== */
+
+.variant-section{
+
+    padding:0 28px 24px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:14px;
+
+}
+
+.variant-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px;
+
+    border:1px solid #e5e5e5;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    background:#fff;
+
+    transition:.25s;
+
+}
+
+.variant-item:hover{
+
+    border-color:#d97706;
+
+    background:#fff8ef;
+
+}
+
+.variant-item input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+.active-variant{
+
+    border:2px solid #d97706;
+
+    background:#fff4e8;
+
+}
+
+.dark-theme .variant-item{
+
+    background:#2a2a2a;
+
+    border-color:#444;
+
+}
+
+.dark-theme .active-variant{
+
+    background:#3a2b17;
+
+}
+
+/* ==========================================
+   EMPTY
+========================================== */
+
+.empty-machine{
+
+    padding:40px;
+
+    text-align:center;
+
+    border:2px dashed #ddd;
+
+    border-radius:18px;
+
+    color:#777;
+
+}

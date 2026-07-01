@@ -1,0 +1,173 @@
+/* =====================================================
+   GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* =====================================================
+   ROOT VARIABLES
+===================================================== */
+
+:root{
+
+    --primary:#c96d22;
+    --primary-dark:#9e4f12;
+
+    --text:#1f1f1f;
+    --text-light:#6d6d6d;
+
+    --white:#ffffff;
+
+    --background:#eef8ff;
+
+    --glass:rgba(255,255,255,.78);
+
+    --border:#e6e6e6;
+
+    --shadow:0 20px 55px rgba(0,0,0,.15);
+
+    --radius:24px;
+
+    --transition:.30s;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+/* =====================================================
+   HTML
+===================================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+button{
+
+    font-family:inherit;
+
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+}
+
+
+/* =====================================================
+   IMAGES
+===================================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+/* =====================================================
+   SCROLL BAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ededed;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}
+
+
+/* =====================================================
+   SELECTION
+===================================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}

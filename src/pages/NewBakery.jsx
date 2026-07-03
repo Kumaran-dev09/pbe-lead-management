@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import TopBar from "../components/TopBar";
 import CompanySwitch from "../components/CompanySwitch";
@@ -15,8 +15,8 @@ import buildLeadRequest from "../utils/buildLeadRequest";
 import { saveLead as saveLeadAPI } from "../api/leadApi";
 
 export default function NewBakery() {
-
   const navigate = useNavigate();
+  const location = useLocation();
 
   const worker = JSON.parse(localStorage.getItem("worker"));
 
@@ -27,22 +27,25 @@ export default function NewBakery() {
   ========================================== */
 
   const [customer, setCustomer] = useState({
-
     name: "",
-
     mobile: "",
-
     whatsapp: "",
-
     country: "India",
-
     state: "Tamil Nadu",
-
     district: "",
-
     area: ""
-
   });
+
+  useEffect(() => {
+    if (location.state?.scannedData) {
+      setCustomer(prev => ({
+        ...prev,
+        name: location.state.scannedData.name || '',
+        mobile: location.state.scannedData.mobile || '',
+        whatsapp: location.state.scannedData.mobile || ''
+      }));
+    }
+  }, [location.state]);
 
   /* ==========================================
      BUSINESS

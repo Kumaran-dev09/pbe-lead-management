@@ -26,14 +26,6 @@ export default function Login() {
 
         }
 
-        if (!pin.trim()) {
-
-            setMessage("Please enter PIN");
-
-            return;
-
-        }
-
         try {
 
             setLoading(true);
@@ -81,6 +73,8 @@ export default function Login() {
                 target: worker.target,
 
                 active: worker.active,
+
+                loginRequired: worker.loginRequired,
 
                 createdAt: worker.createdAt,
 

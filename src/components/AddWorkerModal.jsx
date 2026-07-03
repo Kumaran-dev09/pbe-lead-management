@@ -23,7 +23,9 @@ export default function AddWorkerModal({
 
         target: 50,
 
-        active: true
+        active: true,
+
+        loginRequired: true
 
     });
 
@@ -37,7 +39,9 @@ export default function AddWorkerModal({
 
             ...worker,
 
-            [name]: type === "checkbox" ? checked : value
+            [name]: type === "checkbox" ? checked : value,
+
+            ...(name === "loginRequired" && !checked ? { pin: "" } : {})
 
         });
 
@@ -49,7 +53,7 @@ export default function AddWorkerModal({
             worker.workerId.trim() === "" ||
             worker.name.trim() === "" ||
             worker.mobile.trim() === "" ||
-            worker.pin.trim() === ""
+            (worker.loginRequired && worker.pin.trim() === "")
         ) {
 
             alert("Please fill all required fields.");
@@ -72,7 +76,9 @@ export default function AddWorkerModal({
 
             target: 50,
 
-            active: true
+            active: true,
+
+            loginRequired: true
 
         });
 
@@ -178,6 +184,40 @@ export default function AddWorkerModal({
 
                         <label>
 
+                            Login Required
+
+                        </label>
+
+                        <div className="switch-box">
+
+                            <input
+
+                                type="checkbox"
+
+                                name="loginRequired"
+
+                                checked={worker.loginRequired}
+
+                                onChange={change}
+
+                            />
+
+                            <span>
+
+                                {worker.loginRequired ? "Worker ID + PIN" : "Worker ID Only"}
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    {worker.loginRequired && (
+
+                    <div>
+
+                        <label>
+
                             PIN
 
                         </label>
@@ -197,6 +237,8 @@ export default function AddWorkerModal({
                         />
 
                     </div>
+
+                    )}
 
                     <div>
 

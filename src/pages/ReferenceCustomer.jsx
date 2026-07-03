@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import TopBar from "../components/TopBar";
 import buildLeadRequest from "../utils/buildLeadRequest";
@@ -15,51 +15,51 @@ import LeadNotes from "../components/LeadNotes";
 import "../styles/form.css";
 
 export default function ReferenceCustomer() {
+  const navigate = useNavigate();
+  const location = useLocation();
 
-    const navigate = useNavigate();
+  const worker = JSON.parse(localStorage.getItem("worker"));
 
-    const worker = JSON.parse(localStorage.getItem("worker"));
-
-    /* ==========================================
+  /* ==========================================
        COMPANY
     ========================================== */
 
-    const [company, setCompany] = useState("bakery");
+  const [company, setCompany] = useState("bakery");
 
-    /* ==========================================
+  /* ==========================================
        REFERENCE CUSTOMER
     ========================================== */
 
-    const [referenceCustomer, setReferenceCustomer] = useState({
+  const [referenceCustomer, setReferenceCustomer] = useState({
+    name: "",
+    mobile: "",
+    place: ""
+  });
 
-        name: "",
-
-        mobile: "",
-
-        place: ""
-
-    });
-
-    /* ==========================================
+  /* ==========================================
        NEW CUSTOMER
     ========================================== */
 
-    const [customer, setCustomer] = useState({
+  const [customer, setCustomer] = useState({
+    name: "",
+    mobile: "",
+    whatsapp: "",
+    country: "India",
+    state: "Tamil Nadu",
+    district: "",
+    area: ""
+  });
 
-        name: "",
-
-        mobile: "",
-
-        whatsapp: "",
-
-        country: "India",
-
-        state: "Tamil Nadu",
-
-        district: "",
-        area: ""
-
-    });
+  useEffect(() => {
+    if (location.state?.scannedData) {
+      setCustomer(prev => ({
+        ...prev,
+        name: location.state.scannedData.name || '',
+        mobile: location.state.scannedData.mobile || '',
+        whatsapp: location.state.scannedData.mobile || ''
+      }));
+    }
+  }, [location.state]);
 
     /* ==========================================
        PROJECT TYPE

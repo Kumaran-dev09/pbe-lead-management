@@ -4,6 +4,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import TopBar from "../components/TopBar";
 import CompanySwitch from "../components/CompanySwitch";
 import MachineSlider from "../components/MachineSlider";
+import QRScannerModal from "../components/QRScannerModal";
+import LeadTypePopup from "../components/LeadTypePopup";
 
 import "../styles/dashboard.css";
 import machines from "../data/machines";
@@ -16,8 +18,21 @@ export default function Dashboard() {
   const leadSelectionRef = useRef(null);
 
   const [company, setCompany] = useState("bakery");
+  const [showQRScanner, setShowQRScanner] = useState(false);
+  const [showLeadTypePopup, setShowLeadTypePopup] = useState(false);
+  const [scannedData, setScannedData] = useState(null);
 
   const worker = JSON.parse(localStorage.getItem("worker"));
+
+  const handleScan = () => {
+    setShowQRScanner(prev => !prev);
+  };
+
+  const handleScanSuccess = (data) => {
+    setScannedData(data);
+    setShowQRScanner(false);
+    setShowLeadTypePopup(true);
+  };
 
   const [todayLeads, setTodayLeads] = useState(0);
   const [totalLeads, setTotalLeads] = useState(0);
@@ -87,8 +102,21 @@ export default function Dashboard() {
         company === "bakery" ? "dashboard light-theme" : "dashboard dark-theme"
       }
     >
-      <TopBar company={company} worker={worker} />
+      <TopBar company={company} worker={worker} onScan={handleScan} />
 
+      {showQRScanner && (
+        <QRScannerModal
+          onClose={() => setShowQRScanner(false)}
+          onScanSuccess={handleScanSuccess}
+        />
+      )}
+
+      {showLeadTypePopup && (
+        <LeadTypePopup
+          onClose={() => setShowLeadTypePopup(false)}
+          scannedData={scannedData}
+        />
+      )}
       <div className="dashboard-container">
         {/* COMPANY SWITCH */}
 

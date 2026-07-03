@@ -416,3 +416,142 @@ Worker Action Buttons
     color:#666;
 
 }
+
+@media(max-width:900px){
+
+    .workers-container{
+
+        padding:18px;
+
+    }
+
+    .worker-filter-card,
+    .worker-table-card{
+
+        border-radius:12px;
+
+    }
+
+    .worker-table-card{
+
+        overflow-x:auto;
+
+        -webkit-overflow-scrolling:touch;
+
+    }
+
+    .worker-table{
+
+        min-width:820px;
+
+    }
+
+    .worker-modal,
+    .worker-details-modal{
+
+        width:calc(100vw - 28px);
+
+        max-height:calc(100vh - 28px);
+
+        overflow:auto;
+
+        border-radius:12px;
+
+    }
+
+    .worker-form{
+
+        grid-template-columns:1fr;
+
+        padding:18px;
+
+        gap:16px;
+
+    }
+
+    .worker-footer{
+
+        position:sticky;
+
+        bottom:0;
+
+        background:white;
+
+        flex-direction:column-reverse;
+
+    }
+
+    .worker-footer button,
+    .add-worker-btn,
+    .worker-filter-card button{
+
+        width:100%;
+
+        min-height:44px;
+
+    }
+
+}
+
+@media(max-width:520px){
+
+    .workers-container{
+
+        padding:12px;
+
+    }
+
+    .worker-top{
+
+        align-items:stretch;
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+    .worker-filter-card{
+
+        padding:14px;
+
+        gap:12px;
+
+    }
+
+    .worker-filter-card input,
+    .worker-filter-card select{
+
+        min-width:100%;
+
+    }
+
+    .worker-table-card{
+
+        padding:14px;
+
+    }
+
+    .worker-actions{
+
+        gap:8px;
+
+    }
+
+    .action-btn{
+
+        padding:8px 12px;
+
+        min-height:40px;
+
+    }
+
+    .worker-details-grid{
+
+        padding:16px;
+
+        gap:12px;
+
+    }
+
+}

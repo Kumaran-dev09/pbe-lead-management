@@ -25,7 +25,9 @@ export default function EditWorkerModal({
 
         target:50,
 
-        active:true
+        active:true,
+
+        loginRequired:true
 
     });
 
@@ -45,7 +47,9 @@ export default function EditWorkerModal({
 
                 target:worker.target || 50,
 
-                active:worker.active ?? true
+                active:worker.active ?? true,
+
+                loginRequired:worker.loginRequired ?? true
 
             });
 
@@ -79,7 +83,9 @@ export default function EditWorkerModal({
 
                 ? checked
 
-                : value
+                : value,
+
+            ...(name === "loginRequired" && !checked ? { pin: "" } : {})
 
         });
 
@@ -185,6 +191,44 @@ export default function EditWorkerModal({
 
                         <label>
 
+                            Login Required
+
+                        </label>
+
+                        <div className="switch-box">
+
+                            <input
+
+                                type="checkbox"
+
+                                name="loginRequired"
+
+                                checked={form.loginRequired}
+
+                                onChange={change}
+
+                            />
+
+                            <span>
+
+                                {form.loginRequired
+
+                                    ? "Worker ID + PIN"
+
+                                    : "Worker ID Only"}
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    {form.loginRequired && (
+
+                    <div>
+
+                        <label>
+
                             PIN
 
                         </label>
@@ -202,6 +246,8 @@ export default function EditWorkerModal({
                         />
 
                     </div>
+
+                    )}
 
                     <div>
 

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function TopBar({
   company,
   worker,
+  onScan
 }) {
 
   const navigate = useNavigate();
@@ -69,6 +70,10 @@ export default function TopBar({
     }
 >
     📋 Lead Selection
+</button>
+
+<button onClick={onScan}>
+    📷 Scan QR
 </button>
 
         <button

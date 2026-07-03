@@ -18,7 +18,7 @@ export default function SystemInformation() {
 
                     <label>Application</label>
 
-                    <p>Phoenix Bakery CRM</p>
+                    <p>PBE Lead Management System</p>
 
                 </div>
 
@@ -78,7 +78,7 @@ export default function SystemInformation() {
 
                     <label>Developer</label>
 
-                    <p>Phoenix Robot Technologies</p>
+                    <p>KUMARAN</p>
 
                 </div>
 
@@ -86,7 +86,7 @@ export default function SystemInformation() {
 
                     <label>Support Email</label>
 
-                    <p>phoenixbakeryequipments@gmail.com</p>
+                    <p>kumaran14306@gmail.com</p>
 
                 </div>
 
@@ -102,7 +102,7 @@ export default function SystemInformation() {
 
                     <label>Support</label>
 
-                    <p>+91 9600910222</p>
+                    <p>+91 8838772761</p>
 
                 </div>
 

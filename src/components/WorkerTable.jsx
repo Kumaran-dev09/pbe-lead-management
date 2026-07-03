@@ -115,6 +115,7 @@ export default function WorkerTable() {
                             <th>Name</th>
                             <th>Mobile</th>
                             <th>Target</th>
+                            <th>Login</th>
                             <th>Today</th>
                             <th>Monthly</th>
                             <th>Status</th>
@@ -130,12 +131,13 @@ export default function WorkerTable() {
 
                             workers.map((worker) => (
 
-                                <tr key={worker.id}>
+                                <tr key={worker.workerId}>
 
                                     <td>{worker.workerId}</td>
                                     <td>{worker.name}</td>
                                     <td>{worker.mobile}</td>
                                     <td>{worker.target}</td>
+                                    <td>{worker.loginRequired === false ? "Worker ID Only" : "ID + PIN"}</td>
                                     <td>{worker.today}</td>
                                     <td>{worker.monthly}</td>
                                     <td>{worker.status}</td>
